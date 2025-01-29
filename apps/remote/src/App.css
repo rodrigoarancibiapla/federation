@@ -1,0 +1,78 @@
+/* app.css */
+/* App.css */
+
+/* Aplica un diseño centrado global al contenedor principal */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Asegúrate de que el contenedor ocupe todo el alto */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  font-family: Arial, sans-serif; /* Estilo general de fuente */
+  background-color: #f5f5f5; /* Fondo claro opcional */
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Asegúrate de ocupar todo el contenedor */
+}
+
+/* Ajusta estilos adicionales al contenedor principal */
+div {
+  text-align: center; /* Centra el texto dentro de los contenedores */
+}
+/* App.css */
+
+/* Restablece los estilos predeterminados del navegador */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Asegúrate de que el contenedor ocupe todo el alto */
+  font-family: Arial, sans-serif; /* Fuente base */
+  background-color: #f5f5f5; /* Fondo opcional */
+}
+
+/* Estilos para alinear todo al principio */
+#root {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: flex-start; /* Alinea los elementos arriba */
+  height: 100%; /* Asegúrate de ocupar todo el contenedor */
+  padding: 20px; /* Espaciado opcional */
+  box-sizing: border-box; /* Incluye el padding en el tamaño total */
+}
+
+/* Ajusta estilos adicionales a los elementos */
+div {
+  text-align: center; /* Opcional: centra el texto dentro de los contenedores */
+}
+
+/* Estilos globales para todos los botones */
+button {
+  width: 120px;
+  height: 64px;
+  background-color: #16c406;
+  border: 1px solid black;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para los botones */
+button:hover {
+  background-color: #402cb3;
+}
+
+/* Efecto de foco para accesibilidad */
+button:focus {
+  outline: none;
+  border: 2px solid #402cb3;
+}

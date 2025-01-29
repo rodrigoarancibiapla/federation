@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  host:
+    build:
+      context: .
+      dockerfile: ./apps/host/Dockerfile
+    ports:
+      - "3001:3001"
+    working_dir: /app
+
+  remote:
+    build:
+      context: .
+      dockerfile: ./apps/remote/Dockerfile
+    ports:
+      - "3002:3002"
+    working_dir: /app
+ 
